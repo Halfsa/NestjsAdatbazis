@@ -1,16 +1,22 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title><%= message %></title>
+    <title><%= nev %></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
   <h1>Mikulás bá oldala</h1>
-    <p><a href="/gyerekek">Gyerekek</a></p>
-    <p><a href="/ujGyerek">Új gyerek felvétele</a></p>
+  <h1><%= nev %></h1>
+  <% if (jo) {%>
+    <p>Az ajándéka: <%= ajandek %></p>
+    <% } else { %>
+      <p>Virgácsot kap</p>
+    <% } %>
+    <p><a href="/">Vissza a főoldalra</a></p>
 </body>
 </html>
